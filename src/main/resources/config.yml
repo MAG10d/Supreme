@@ -1,5 +1,5 @@
 options:
-  auto-update: true
+  auto-update: false
   use-legacy-supremeexpansion-item-id: false
   enable-item-converter-machine: true
   lang: zh-CN
