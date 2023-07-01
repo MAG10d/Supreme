@@ -36,5 +36,4 @@ public class FlexItemContainerMachine extends MediumContainerMachine {
     public int getSizeProcessInput(){
         return -1;
     }
-
 }

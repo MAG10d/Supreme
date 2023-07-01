@@ -100,18 +100,18 @@ public final class EnergyGenerator extends MenuBlock implements EnergyNetProvide
       if (this.generate == 0) {
         inv.replaceExistingItem(13, new CustomItemStack(
                 Material.RED_STAINED_GLASS_PANE,
-                "&c未发电",
-                "&7类型: &6" + this.type,
-                "&7已储存: &6" + UtilEnergy.format(getCharge(l)) + " J",
+                "&c未發電",
+                "&7類型: &6" + this.type,
+                "&7已儲存: &6" + UtilEnergy.format(getCharge(l)) + " J",
                 "&7容量: &6" + UtilEnergy.format(this.buffer) + " J"
         ));
       } else {
         inv.replaceExistingItem(13, new CustomItemStack(
                 Material.GREEN_STAINED_GLASS_PANE,
-                "&a发电中",
-                "&7类型: &6" + this.type,
-                "&7发电速度: &6" + UtilEnergy.format(this.generate) + " J/粘液刻",
-                "&7已储存: &6" + UtilEnergy.format(getCharge(l)) + " J",
+                "&a發電中",
+                "&7類型: &6" + this.type,
+                "&7發電速度: &6" + UtilEnergy.format(this.generate) + " J/黏液刻",
+                "&7已儲存: &6" + UtilEnergy.format(getCharge(l)) + " J",
                 "&7容量: &6" + UtilEnergy.format(this.buffer) + " J"
         ));
       }
@@ -124,6 +124,4 @@ public final class EnergyGenerator extends MenuBlock implements EnergyNetProvide
   public int getCapacity() {
     return this.buffer;
   }
-
-
 }

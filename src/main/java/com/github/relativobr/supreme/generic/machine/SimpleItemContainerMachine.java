@@ -65,5 +65,4 @@ public class SimpleItemContainerMachine extends MediumContainerMachine {
     public int[] getOutputBorderSlots(){
         return InventoryRecipe.SIMPLE_OUTPUT_BORDER;
     }
-
 }

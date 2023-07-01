@@ -150,25 +150,25 @@ public class MediumContainerMachine extends AContainer implements NotHopperable,
   private void invalidOutput(BlockMenu menu) {
     menu.replaceExistingItem(getStatusSlot(), new CustomItemStack(
         Material.RED_STAINED_GLASS_PANE,
-        "&c输出已满"
+        "&c輸出已滿"
     ));
   }
 
   private void noEnergyStart(BlockMenu menu) {
     menu.replaceExistingItem(getStatusSlot(), new CustomItemStack(
-        Material.RED_STAINED_GLASS_PANE, "&c电力不足"
+        Material.RED_STAINED_GLASS_PANE, "&c電力不足"
     ));
   }
 
   private void noEnergyContinue(BlockMenu menu, ItemStack material) {
     menu.replaceExistingItem(getStatusSlot(), new CustomItemStack(
-        material, "&c电力不足"
+        material, "&c電力不足"
     ));
   }
 
   private void noMaterialContinue(BlockMenu menu, ItemStack material) {
     menu.replaceExistingItem(getStatusSlot(), new CustomItemStack(
-        material, "&c需要更多输入"
+        material, "&c需要更多輸入"
     ));
   }
 
@@ -499,5 +499,4 @@ public class MediumContainerMachine extends AContainer implements NotHopperable,
   public boolean isProcessing(Block b) {
     return getProcessing(b) != null;
   }
-
 }
