@@ -50,9 +50,9 @@ public class MobTechCollector extends SimpleItemWithLargeContainerMachine {
 
   public static final SlimefunItemStack MOB_TECH_COLLECTOR_MACHINE_I = new SupremeItemStack(
       "MOB_TECH_COLLECTOR_MACHINE", Material.NETHER_GOLD_ORE, "&b生物科技收集器I", "",
-      "&f这个机器允许你收集", "&f附近生物的生物科技(3格)", "",
+      "&f這個機器允許你收集", "&f附近生物的生物科技(3格)", "",
       LoreBuilder.machine(MachineTier.ADVANCED, MachineType.MACHINE), LoreBuilder.speed(1),
-      LoreBuilder.powerBuffer(1000), LoreBuilder.powerPerSecond(20), "", "&3至尊机器");
+      LoreBuilder.powerBuffer(1000), LoreBuilder.powerPerSecond(20), "", "&3至尊機器");
   public static final ItemStack[] RECIPE_MOB_TECH_COLLECTOR_MACHINE_I = new ItemStack[]{
       SupremeComponents.RUSTLESS_MACHINE, MobCollectorTools.MOB_COLLECTOR_I, SupremeComponents.RUSTLESS_MACHINE,
       SupremeComponents.INDUCTIVE_MACHINE, MobCollectorTools.MOB_COLLECTOR_I, SupremeComponents.INDUCTIVE_MACHINE,
@@ -60,9 +60,9 @@ public class MobTechCollector extends SimpleItemWithLargeContainerMachine {
 
   public static final SlimefunItemStack MOB_TECH_COLLECTOR_MACHINE_II = new SupremeItemStack(
       "SUPREME_MOB_TECH_COLLECTOR_MACHINE_II", Material.NETHER_GOLD_ORE, "&b生物科技收集器II", "",
-      "&f这个机器允许你收集", "&f附近生物的生物科技(6格)", "",
+      "&f這個機器允許你收集", "&f附近生物的生物科技(6格)", "",
       LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.speed(1),
-      LoreBuilder.powerBuffer(1000), LoreBuilder.powerPerSecond(20), "", "&3至尊机器");
+      LoreBuilder.powerBuffer(1000), LoreBuilder.powerPerSecond(20), "", "&3至尊機器");
   public static final ItemStack[] RECIPE_MOB_TECH_COLLECTOR_MACHINE_II = new ItemStack[]{
       SupremeComponents.CONVEYANCE_MACHINE, SupremeCetrus.CETRUS_LUMIUM, SupremeComponents.CONVEYANCE_MACHINE,
       SupremeComponents.INDUCTOR_MACHINE, MobTechCollector.MOB_TECH_COLLECTOR_MACHINE_I,
@@ -71,9 +71,9 @@ public class MobTechCollector extends SimpleItemWithLargeContainerMachine {
 
   public static final SlimefunItemStack MOB_TECH_COLLECTOR_MACHINE_III = new SupremeItemStack(
       "SUPREME_MOB_TECH_COLLECTOR_MACHINE_III", Material.NETHER_GOLD_ORE, "&b生物科技收集器III", "",
-      "&f这个机器允许你收集", "&f附近生物的生物科技(9格)", "",
+      "&f這個機器允許你收集", "&f附近生物的生物科技(9格)", "",
       LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.speed(1),
-      LoreBuilder.powerBuffer(1000), LoreBuilder.powerPerSecond(20), "", "&3至尊机器");
+      LoreBuilder.powerBuffer(1000), LoreBuilder.powerPerSecond(20), "", "&3至尊機器");
   public static final ItemStack[] RECIPE_MOB_TECH_COLLECTOR_MACHINE_III = new ItemStack[]{SupremeComponents.THORNERITE,
       SupremeCetrus.CETRUS_LUX, SupremeComponents.THORNERITE, SupremeComponents.SUPREME,
       MobTechCollector.MOB_TECH_COLLECTOR_MACHINE_II, SupremeComponents.SUPREME, SupremeComponents.CRYSTALLIZER_MACHINE,

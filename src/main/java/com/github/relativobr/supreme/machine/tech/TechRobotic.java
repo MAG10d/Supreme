@@ -47,30 +47,30 @@ import java.util.Objects;
 public class TechRobotic extends SimpleItemContainerMachine implements Radioactive {
 
   public static final SlimefunItemStack TECH_ROBOTIC = new SupremeItemStack("SUPREME_TECH_ROBOTIC",
-      Material.POLISHED_BLACKSTONE, "&b科技机器人", "", "&f将低级生物科技",
-      "&f升级为更高等级", "&f需要64个", "", LoreBuilder.radioactive(Radioactivity.VERY_HIGH), "",
+      Material.POLISHED_BLACKSTONE, "&b科技機器人", "", "&f將低級生物科技",
+      "&f升級為更高等級", "&f需要64個", "", LoreBuilder.radioactive(Radioactivity.VERY_HIGH), "",
       LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), UtilEnergy.energyPowerPerSecond(500), "",
-      "&3至尊机器");
+      "&3至尊機器");
   public static final ItemStack[] RECIPE_TECH_ROBOTIC = {SupremeComponents.INDUCTIVE_MACHINE,
       SupremeComponents.SYNTHETIC_RUBY, SupremeComponents.INDUCTIVE_MACHINE, SlimefunItems.REINFORCED_PLATE,
       SlimefunItems.ELECTRIC_MOTOR, SlimefunItems.REINFORCED_PLATE, SupremeComponents.RUSTLESS_MACHINE,
       SupremeCore.CORE_OF_BLOCK, SupremeComponents.RUSTLESS_MACHINE};
 
   public static final SlimefunItemStack TECH_ROBOTIC_II = new SupremeItemStack("SUPREME_TECH_ROBOTIC_II",
-      Material.POLISHED_BLACKSTONE, "&b科技机器人 II", "", "&f将低级生物科技",
-      "&f升级为更高等级", "&f需要32个", "", LoreBuilder.radioactive(Radioactivity.VERY_HIGH), "",
+      Material.POLISHED_BLACKSTONE, "&b科技機器人 II", "", "&f將低級生物科技",
+      "&f升級為更高等級", "&f需要32個", "", LoreBuilder.radioactive(Radioactivity.VERY_HIGH), "",
       LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), UtilEnergy.energyPowerPerSecond(500), "",
-      "&3至尊机器");
+      "&3至尊機器");
   public static final ItemStack[] RECIPE_TECH_ROBOTIC_II = new ItemStack[]{SupremeComponents.CONVEYANCE_MACHINE,
       SupremeCetrus.CETRUS_LUMIUM, SupremeComponents.CONVEYANCE_MACHINE, SupremeComponents.INDUCTOR_MACHINE,
       TechRobotic.TECH_ROBOTIC, SupremeComponents.INDUCTOR_MACHINE, SupremeComponents.THORNERITE,
       SupremeCetrus.CETRUS_IGNIS, SupremeComponents.THORNERITE};
 
   public static final SlimefunItemStack TECH_ROBOTIC_III = new SupremeItemStack("SUPREME_TECH_ROBOTIC_III",
-      Material.POLISHED_BLACKSTONE, "&b科技机器人 III", "", "&f将低级生物科技",
-      "&f升级为更高等级", "&f需要16个", "", LoreBuilder.radioactive(Radioactivity.VERY_HIGH), "",
+      Material.POLISHED_BLACKSTONE, "&b科技機器人 III", "", "&f將低級生物科技",
+      "&f升級為更高等級", "&f需要16個", "", LoreBuilder.radioactive(Radioactivity.VERY_HIGH), "",
       LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), UtilEnergy.energyPowerPerSecond(500), "",
-      "&3至尊机器");
+      "&3至尊機器");
   public static final ItemStack[] RECIPE_TECH_ROBOTIC_III = new ItemStack[]{SupremeComponents.THORNERITE,
       SupremeAttribute.getImpetus(), SupremeComponents.THORNERITE, SupremeComponents.SUPREME,
       TechRobotic.TECH_ROBOTIC_II, SupremeComponents.SUPREME, SupremeComponents.CRYSTALLIZER_MACHINE,
@@ -185,7 +185,7 @@ public class TechRobotic extends SimpleItemContainerMachine implements Radioacti
 
       } else {
 
-        invalidProgressBar(inv, "&c输入物品无效");
+        invalidProgressBar(inv, "&c輸入物品無效");
 
       }
 
@@ -232,10 +232,10 @@ public class TechRobotic extends SimpleItemContainerMachine implements Radioacti
               Math.round(ticksTotal / this.getSpeed()), result);
         }
       } else {
-        invalidProgressBar(inv, "&c电力不足");
+        invalidProgressBar(inv, "&c電力不足");
       }
     } else {
-      invalidProgressBar(inv, "&c机器运行异常");
+      invalidProgressBar(inv, "&c機器運行異常");
     }
   }
 
@@ -291,5 +291,4 @@ public class TechRobotic extends SimpleItemContainerMachine implements Radioacti
   public Radioactivity getRadioactivity() {
     return Radioactivity.VERY_HIGH;
   }
-
 }

@@ -172,12 +172,12 @@ public class AbstractQuarry extends SlimefunItem implements EnergyNetComponent {
     final String infoSpeed = UtilEnergy.timePerItem((getSupremeOptions().getCustomTickerDelay() * delaySpeed) / 2);
     if (energyCharge < getEnergyConsumption() || !this.enabled) {
       menu.addItem(InventoryRecipe.QUARRY_STATUS,
-          new CustomItemStack(Material.OBSIDIAN, ChatColor.RED + "未启用", powerPerSecond, powerCharged,
+          new CustomItemStack(Material.OBSIDIAN, ChatColor.RED + "未啟用", powerPerSecond, powerCharged,
               infoSpeed));
       menu.addMenuClickHandler(InventoryRecipe.QUARRY_STATUS, ChestMenuUtils.getEmptyClickHandler());
     } else {
       menu.addItem(InventoryRecipe.QUARRY_STATUS,
-          new CustomItemStack(Material.GLOWSTONE, ChatColor.GREEN + "已启用", powerPerSecond, powerCharged, infoSpeed));
+          new CustomItemStack(Material.GLOWSTONE, ChatColor.GREEN + "已啟用", powerPerSecond, powerCharged, infoSpeed));
       menu.addMenuClickHandler(InventoryRecipe.QUARRY_STATUS, ChestMenuUtils.getEmptyClickHandler());
     }
     if (enabled) {

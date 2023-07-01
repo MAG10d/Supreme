@@ -58,13 +58,13 @@ public class TechGenerator extends SimpleItemContainerMachine implements Radioac
       "SUPREME_TECH_GENERATOR", Material.LOOM,
       "&b生物科技生成器",
       "",
-      "&f使用&4卡片&f生成各种物品",
+      "&f使用&4卡片&f生成各種物品",
       "",
-      "&f使用&4生物科技&f来加速生产",
+      "&f使用&4生物科技&f來加速生產",
       "",
       LoreBuilder.radioactive(Radioactivity.LOW), "",
       LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
-      UtilEnergy.energyPowerPerTick(2000), "", "&3至尊机器");
+      UtilEnergy.energyPowerPerTick(2000), "", "&3至尊機器");
   public static final ItemStack[] RECIPE_TECH_GENERATOR = {SupremeComponents.INDUCTIVE_MACHINE,
       SupremeComponents.SYNTHETIC_RUBY, SupremeComponents.INDUCTIVE_MACHINE,
       SlimefunItems.REINFORCED_ALLOY_INGOT,
@@ -238,7 +238,7 @@ public class TechGenerator extends SimpleItemContainerMachine implements Radioac
 
       } else {
 
-        invalidStatus(inv, "&c无效的输入物品");
+        invalidStatus(inv, "&c無效的輸入物品");
 
       }
 
@@ -328,10 +328,10 @@ public class TechGenerator extends SimpleItemContainerMachine implements Radioac
         }
       } else {
         final int downConsumption = checkDownConsumption(this.getEnergyConsumption(), inv);
-        invalidStatus(inv, "&c电力不足 (需要: " + downConsumption + " J/粘液刻)");
+        invalidStatus(inv, "&c電力不足 (需要: " + downConsumption + " J/黏液刻)");
       }
     } else {
-      invalidStatus(inv, "&c机器运行异常");
+      invalidStatus(inv, "&c機器運行異常");
     }
   }
 

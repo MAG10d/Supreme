@@ -42,9 +42,9 @@ import org.springframework.scheduling.annotation.Async;
 public class VirtualGarden extends SimpleItemWithLargeContainerMachine {
 
   public static final SlimefunItemStack VIRTUAL_GARDEN_MACHINE = new SupremeItemStack("SUPREME_VIRTUAL_GARDEN_I",
-      Material.STRIPPED_WARPED_HYPHAE, "&b虚拟花园", "", "&f这个机器允许你",
-      "&f培育一些资源", "", LoreBuilder.machine(MachineTier.ADVANCED, MachineType.MACHINE),
-      LoreBuilder.speed(1), LoreBuilder.powerBuffer(1000), LoreBuilder.powerPerSecond(20), "", "&3至尊机器");
+      Material.STRIPPED_WARPED_HYPHAE, "&b虛擬花園", "", "&f這個機器允許你",
+      "&f培育一些資源", "", LoreBuilder.machine(MachineTier.ADVANCED, MachineType.MACHINE),
+      LoreBuilder.speed(1), LoreBuilder.powerBuffer(1000), LoreBuilder.powerPerSecond(20), "", "&3至尊機器");
   public static final ItemStack[] RECIPE_VIRTUAL_GARDEN_MACHINE = new ItemStack[]{SupremeComponents.SYNTHETIC_RUBY,
       new ItemStack(Material.STRIPPED_WARPED_HYPHAE), SupremeComponents.SYNTHETIC_RUBY,
       SupremeComponents.RUSTLESS_MACHINE, SupremeComponents.PETRIFIER_MACHINE, SupremeComponents.RUSTLESS_MACHINE,
@@ -52,18 +52,18 @@ public class VirtualGarden extends SimpleItemWithLargeContainerMachine {
       SupremeComponents.ADAMANTIUM_PLATE};
 
   public static final SlimefunItemStack VIRTUAL_GARDEN_MACHINE_II = new SupremeItemStack("SUPREME_VIRTUAL_GARDEN_II",
-      Material.STRIPPED_WARPED_HYPHAE, "&b虚拟花园II", "", "&f这个机器允许你",
-      "&f培育一些资源", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
-      LoreBuilder.speed(5), LoreBuilder.powerBuffer(5000), LoreBuilder.powerPerSecond(100), "", "&3至尊机器");
+      Material.STRIPPED_WARPED_HYPHAE, "&b虛擬花園II", "", "&f這個機器允許你",
+      "&f培育一些資源", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
+      LoreBuilder.speed(5), LoreBuilder.powerBuffer(5000), LoreBuilder.powerPerSecond(100), "", "&3至尊機器");
   public static final ItemStack[] RECIPE_VIRTUAL_GARDEN_MACHINE_II = new ItemStack[]{
       SupremeComponents.CONVEYANCE_MACHINE, SupremeCetrus.CETRUS_LUMIUM, SupremeComponents.CONVEYANCE_MACHINE,
       SupremeComponents.INDUCTOR_MACHINE, VirtualGarden.VIRTUAL_GARDEN_MACHINE, SupremeComponents.INDUCTOR_MACHINE,
       SupremeComponents.THORNERITE, SupremeCetrus.CETRUS_AQUA, SupremeComponents.THORNERITE};
 
   public static final SlimefunItemStack VIRTUAL_GARDEN_MACHINE_III = new SupremeItemStack("SUPREME_VIRTUAL_GARDEN_III",
-      Material.STRIPPED_WARPED_HYPHAE, "&b虚拟花园III", "", "&f这个机器允许你",
-      "&f培育一些资源", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
-      LoreBuilder.speed(15), LoreBuilder.powerBuffer(15000), LoreBuilder.powerPerSecond(300), "", "&3至尊机器");
+      Material.STRIPPED_WARPED_HYPHAE, "&b虛擬花園III", "", "&f這個機器允許你",
+      "&f培育一些資源", "", LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
+      LoreBuilder.speed(15), LoreBuilder.powerBuffer(15000), LoreBuilder.powerPerSecond(300), "", "&3至尊機器");
   public static final ItemStack[] RECIPE_VIRTUAL_GARDEN_MACHINE_III = new ItemStack[]{SupremeComponents.THORNERITE,
       SupremeAttribute.getFortune(), SupremeComponents.THORNERITE, SupremeComponents.SUPREME,
       VirtualGarden.VIRTUAL_GARDEN_MACHINE_II, SupremeComponents.SUPREME, SupremeComponents.CRYSTALLIZER_MACHINE,
@@ -103,7 +103,7 @@ public class VirtualGarden extends SimpleItemWithLargeContainerMachine {
     VirtualGardenMachineRecipe.getAllRecipe()
         .stream().filter(Objects::nonNull)
         .forEach(recipe -> {
-      displayRecipes.add(new CustomItemStack(recipe.getFirstMaterialInput(), null, "&f需要&b培养"));
+      displayRecipes.add(new CustomItemStack(recipe.getFirstMaterialInput(), null, "&f需要&b培養"));
       displayRecipes.add(new ItemStack(recipe.getFirstMaterialOutput()));
     });
     return displayRecipes;

@@ -13,5 +13,4 @@ public class CompatibilySupremeLegacyItem {
 
   String newSupremeID;
   String oldSupremeID;
-
 }

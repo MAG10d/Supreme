@@ -23,27 +23,27 @@ import org.springframework.scheduling.annotation.Async;
 public class ForgeIngot extends SimpleItemWithLargeContainerMachine {
 
   public static final SlimefunItemStack FORGE_INGOT_MACHINE = new SupremeItemStack("SUPREME_FORGE_INGOT_I",
-      Material.BLAST_FURNACE, "&b铸锭机", "", "&f这个机器允许你", "&f铸锭", "",
+      Material.BLAST_FURNACE, "&b鑄錠機", "", "&f這個機器允許你", "&f鑄錠", "",
       LoreBuilder.machine(MachineTier.ADVANCED, MachineType.MACHINE), LoreBuilder.speed(1),
-      LoreBuilder.powerBuffer(1000), LoreBuilder.powerPerSecond(20), "", "&3至尊机器");
+      LoreBuilder.powerBuffer(1000), LoreBuilder.powerPerSecond(20), "", "&3至尊機器");
   public static final ItemStack[] RECIPE_FORGE_INGOT_MACHINE = new ItemStack[]{SupremeComponents.RUSTLESS_MACHINE,
       new ItemStack(Material.BLAST_FURNACE), SupremeComponents.RUSTLESS_MACHINE, SupremeComponents.INDUCTIVE_MACHINE,
       SupremeComponents.PETRIFIER_MACHINE, SupremeComponents.INDUCTIVE_MACHINE, SlimefunItems.ELECTRIC_INGOT_FACTORY_3,
       SlimefunItems.ELECTRIC_SMELTERY_2, SlimefunItems.CARBON_PRESS_3};
 
   public static final SlimefunItemStack FORGE_INGOT_MACHINE_II = new SupremeItemStack("SUPREME_FORGE_INGOT_II",
-      Material.BLAST_FURNACE, "&b铸锭机II", "", "&f这个机器允许你", "&f铸锭", "",
+      Material.BLAST_FURNACE, "&b鑄錠機II", "", "&f這個機器允許你", "&f鑄錠", "",
       LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.speed(5),
-      LoreBuilder.powerBuffer(5000), LoreBuilder.powerPerSecond(100), "", "&3至尊机器");
+      LoreBuilder.powerBuffer(5000), LoreBuilder.powerPerSecond(100), "", "&3至尊機器");
   public static final ItemStack[] RECIPE_FORGE_INGOT_MACHINE_II = new ItemStack[]{SupremeComponents.CONVEYANCE_MACHINE,
       SupremeCetrus.CETRUS_IGNIS, SupremeComponents.CONVEYANCE_MACHINE, SupremeComponents.INDUCTOR_MACHINE,
       ForgeIngot.FORGE_INGOT_MACHINE, SupremeComponents.INDUCTOR_MACHINE, SupremeComponents.THORNERITE,
       SupremeCetrus.CETRUS_LUMIUM, SupremeComponents.THORNERITE};
 
   public static final SlimefunItemStack FORGE_INGOT_MACHINE_III = new SupremeItemStack("SUPREME_FORGE_INGOT_III",
-      Material.BLAST_FURNACE, "&b铸锭机III", "", "&f这个机器允许你", "&f铸锭", "",
+      Material.BLAST_FURNACE, "&b鑄錠機III", "", "&f這個機器允許你", "&f鑄錠", "",
       LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.speed(15),
-      LoreBuilder.powerBuffer(15000), LoreBuilder.powerPerSecond(300), "", "&3至尊机器");
+      LoreBuilder.powerBuffer(15000), LoreBuilder.powerPerSecond(300), "", "&3至尊機器");
   public static final ItemStack[] RECIPE_FORGE_INGOT_MACHINE_III = new ItemStack[]{SupremeComponents.THORNERITE,
       SupremeAttribute.getBomb(), SupremeComponents.THORNERITE, SupremeComponents.SUPREME,
       ForgeIngot.FORGE_INGOT_MACHINE_II, SupremeComponents.SUPREME, SupremeComponents.CRYSTALLIZER_MACHINE,

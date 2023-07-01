@@ -17,12 +17,12 @@ public class UtilEnergy {
 
   @Nonnull
   public static String energyCapacity(Integer energy) {
-    return "&8⇨ &e⚡ &7" + ((energy == null) ? "无限" : format((double) energy)) + " J 容量";
+    return "&8⇨ &e⚡ &7" + ((energy == null) ? "無限" : format((double) energy)) + " J 容量";
   }
 
   @Nonnull
   public static String energyBuffer(Integer energy) {
-    return "&8⇨ &e⚡ &7" + ((energy == null) ? "无限" : format((double) energy)) + " J 可存储";
+    return "&8⇨ &e⚡ &7" + ((energy == null) ? "無限" : format((double) energy)) + " J 可儲存";
   }
 
   @Nonnull
@@ -47,7 +47,7 @@ public class UtilEnergy {
 
   @Nonnull
   public static String chancePerItem(double energy) {
-    return "&8⇨ &b⚡ &7几率: " + format(energy) + " %";
+    return "&8⇨ &b⚡ &7機率: " + format(energy) + " %";
   }
 
 }

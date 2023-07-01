@@ -77,9 +77,9 @@ import org.springframework.scheduling.annotation.Async;
 public class MobCollector extends SimpleItemWithLargeContainerMachine {
 
   public static final SlimefunItemStack MOB_COLLECTOR_MACHINE = new SupremeItemStack("SUPREME_MOB_COLLECTOR_MACHINE_I",
-      Material.RESPAWN_ANCHOR, "&b生物收集器", "", "&f这个机器允许你收集",
-      "&f附近生物的战利品(4格)", "", LoreBuilder.machine(MachineTier.ADVANCED, MachineType.MACHINE),
-      LoreBuilder.speed(1), LoreBuilder.powerBuffer(1000), LoreBuilder.powerPerSecond(20), "", "&3至尊机器");
+      Material.RESPAWN_ANCHOR, "&b生物收集器", "", "&f這個機器允許你收集",
+      "&f附近生物的戰利品(4格)", "", LoreBuilder.machine(MachineTier.ADVANCED, MachineType.MACHINE),
+      LoreBuilder.speed(1), LoreBuilder.powerBuffer(1000), LoreBuilder.powerPerSecond(20), "", "&3至尊機器");
   public static final ItemStack[] RECIPE_MOB_COLLECTOR_MACHINE = new ItemStack[]{SupremeComponents.RUSTLESS_MACHINE,
       new ItemStack(Material.RESPAWN_ANCHOR), SupremeComponents.RUSTLESS_MACHINE, SupremeComponents.INDUCTIVE_MACHINE,
       SupremeComponents.SYNTHETIC_RUBY, SupremeComponents.INDUCTIVE_MACHINE, SupremeComponents.ADAMANTIUM_PLATE,
@@ -87,9 +87,9 @@ public class MobCollector extends SimpleItemWithLargeContainerMachine {
 
   public static final SlimefunItemStack MOB_COLLECTOR_MACHINE_II = new SupremeItemStack(
       "SUPREME_MOB_COLLECTOR_MACHINE_II", Material.RESPAWN_ANCHOR, "&b生物收集器II", "",
-      "&f这个机器允许你收集", "&f附近生物的战利品(8格)", "",
+      "&f這個機器允許你收集", "&f附近生物的戰利品(8格)", "",
       LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.speed(5),
-      LoreBuilder.powerBuffer(5000), LoreBuilder.powerPerSecond(100), "", "&3至尊机器");
+      LoreBuilder.powerBuffer(5000), LoreBuilder.powerPerSecond(100), "", "&3至尊機器");
   public static final ItemStack[] RECIPE_MOB_COLLECTOR_MACHINE_II = new ItemStack[]{
       SupremeComponents.CONVEYANCE_MACHINE, SupremeCetrus.CETRUS_LUMIUM, SupremeComponents.CONVEYANCE_MACHINE,
       SupremeComponents.INDUCTOR_MACHINE, MobCollector.MOB_COLLECTOR_MACHINE, SupremeComponents.INDUCTOR_MACHINE,
@@ -97,9 +97,9 @@ public class MobCollector extends SimpleItemWithLargeContainerMachine {
 
   public static final SlimefunItemStack MOB_COLLECTOR_MACHINE_III = new SupremeItemStack(
       "SUPREME_MOB_COLLECTOR_MACHINE_III", Material.RESPAWN_ANCHOR, "&b生物收集器III", "",
-      "&f这个机器允许你收集", "&f附近生物的战利品(16格)", "",
+      "&f這個機器允許你收集", "&f附近生物的戰利品(16格)", "",
       LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE), LoreBuilder.speed(15),
-      LoreBuilder.powerBuffer(15000), LoreBuilder.powerPerSecond(300), "", "&3至尊机器");
+      LoreBuilder.powerBuffer(15000), LoreBuilder.powerPerSecond(300), "", "&3至尊機器");
   public static final ItemStack[] RECIPE_MOB_COLLECTOR_MACHINE_III = new ItemStack[]{SupremeComponents.THORNERITE,
       SupremeAttribute.getBomb(), SupremeComponents.THORNERITE, SupremeComponents.SUPREME,
       MobCollector.MOB_COLLECTOR_MACHINE_II, SupremeComponents.SUPREME, SupremeComponents.CRYSTALLIZER_MACHINE,

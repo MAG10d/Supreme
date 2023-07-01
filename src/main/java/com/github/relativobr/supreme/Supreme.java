@@ -139,20 +139,20 @@ public class Supreme extends JavaPlugin implements SlimefunAddon {
     instance = this;
 
     if (!getServer().getPluginManager().isPluginEnabled("GuizhanLibPlugin")) {
-      getLogger().log(Level.SEVERE, "本插件需要 鬼斩前置库插件(GuizhanLibPlugin) 才能运行!");
-      getLogger().log(Level.SEVERE, "从此处下载: https://50l.cc/gzlib");
+      getLogger().log(Level.SEVERE, "本插件需要 鬼斬前置庫插件(GuizhanLibPlugin) 才能運行!");
+      getLogger().log(Level.SEVERE, "從此處下載: https://50l.cc/gzlib");
       getServer().getPluginManager().disablePlugin(this);
       return;
     }
 
     Supreme.inst().log(Level.INFO, "########################################");
     Supreme.inst().log(Level.INFO, "      Supreme 2.0  作者:RelativoBR       ");
-    Supreme.inst().log(Level.INFO, "         汉化:SlimefunGuguProject        ");
+    Supreme.inst().log(Level.INFO, "         漢化:SlimefunGuguProject        ");
     Supreme.inst().log(Level.INFO, "########################################");
 
     Config cfg = new Config(this);
     if (getSupremeOptions() == null) {
-      log(Level.SEVERE, "配置文件中 \"options\" 部分缺失, 请检查下载文件的完整性, 并汇报该问题!");
+      log(Level.SEVERE, "配置文件中 \"options\" 部分缺失, 請檢查下載文件的完整性, 並匯報該問題!");
       inst().onDisable();
       return;
     }
@@ -160,22 +160,22 @@ public class Supreme extends JavaPlugin implements SlimefunAddon {
     if (getSupremeOptions().isAutoUpdate()
         && cfg.getBoolean("options.auto-update")
         && getDescription().getVersion().startsWith("Build")) {
-      Supreme.inst().log(Level.INFO, "自动更新: 已启用");
+      Supreme.inst().log(Level.INFO, "自動更新: 已啟用");
       GuizhanUpdater.start(this, getFile(), "SlimefunGuguProject", "Supreme", "main");
     } else {
-      Supreme.inst().log(Level.INFO, "自动更新: 已禁用");
+      Supreme.inst().log(Level.INFO, "自動更新: 已禁用");
     }
 
     // localization
-    Supreme.inst().log(Level.INFO, "已加载语言: " + getSupremeOptions().getLang());
+    Supreme.inst().log(Level.INFO, "已載入語言: " + getSupremeOptions().getLang());
     getLocalization();
 
     // check Compatibily Legacy (SupremeExpansion)
     if (getSupremeOptions().isUseLegacySupremeexpansionItemId()) {
-      Supreme.inst().log(Level.INFO, "至尊研究院1.0物品ID兼容: 已启用");
+      Supreme.inst().log(Level.INFO, "至尊研究院1.0物品ID相容: 已啟用");
       getLegacyItem();
     } else {
-      Supreme.inst().log(Level.INFO, "至尊研究院1.0物品ID兼容: 已禁用");
+      Supreme.inst().log(Level.INFO, "至尊研究院1.0物品ID相容: 已禁用");
     }
 
     MainSetup.setup(this);

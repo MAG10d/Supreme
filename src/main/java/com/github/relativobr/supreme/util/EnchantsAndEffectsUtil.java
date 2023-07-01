@@ -41,7 +41,7 @@ public class EnchantsAndEffectsUtil {
                 lore.add("");
             }
 
-            lore.add(ChatColor.AQUA + "灵魂绑定");
+            lore.add(ChatColor.AQUA + "靈魂綁定");
 
             // find path
             String itemPath = getNewIdSupremeLegacy(item.getItemId()).toLowerCase();
@@ -90,7 +90,7 @@ public class EnchantsAndEffectsUtil {
                 lore.add("");
             }
 
-            lore.add(ChatColor.AQUA + "灵魂绑定");
+            lore.add(ChatColor.AQUA + "靈魂綁定");
 
             // find path
             String itemPath = getNewIdSupremeLegacy(item.getItemId()).toLowerCase();

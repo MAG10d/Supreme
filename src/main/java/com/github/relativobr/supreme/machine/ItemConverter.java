@@ -32,10 +32,10 @@ import org.bukkit.inventory.meta.Repairable;
 public class ItemConverter extends SimpleItemContainerMachine {
 
   public static final SlimefunItemStack ITEM_CONVERTER_MACHINE = new SupremeItemStack("SUPREME_ITEM_CONVERTER_MACHINE",
-      Material.CARTOGRAPHY_TABLE, "&b物品转换器", "", "&f将至尊研究院1.0的物品",
-      "&f转换为2.0中的新物品",
+      Material.CARTOGRAPHY_TABLE, "&b物品轉換器", "", "&f將至尊研究院1.0的物品",
+      "&f轉換為2.0中的新物品",
       LoreBuilder.machine(MachineTier.ADVANCED, MachineType.MACHINE), LoreBuilder.speed(1000),
-      UtilEnergy.energyPowerPerSecond(0), "", "&3至尊机器");
+      UtilEnergy.energyPowerPerSecond(0), "", "&3至尊機器");
   public static final ItemStack[] RECIPE_ITEM_CONVERTER_MACHINE = new ItemStack[]{new ItemStack(Material.REDSTONE),
       new ItemStack(Material.REDSTONE), new ItemStack(Material.REDSTONE), new ItemStack(Material.PAPER),
       new ItemStack(Material.CARTOGRAPHY_TABLE), new ItemStack(Material.PAPER), new ItemStack(Material.REDSTONE_BLOCK),
